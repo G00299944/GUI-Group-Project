@@ -8,10 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Homepage</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body id="changeMe">
+    <h1>Henlo fren, mah nam is dayvid</h1>
+    <h2>Connor is a a really cool guy<h2>
+    <h3>Where has Evan gone!?</h3>
+	<h4>I'm not sure :c</h4>
+	<br>
+	<button onclick="clicked()">Curiousity Button</button>
+
+	
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -20,3 +28,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script>
+	function clicked()
+	{
+		document.body.innerHTML = "<h1>So what are we doing the website on guys? ~ Connor</h1>";
+		document.body.style.background = 'black';
+		document.body.style.color = '#01ff05';
+	}
+</script>
