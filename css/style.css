@@ -1,3 +1,58 @@
-body {
-	background-color: #83a8d4;
-}
+      body {
+        background-color: #171a21;
+      }
+	  p {
+		color: #eaeaea;
+	  }
+	  
+	  #nameBar{
+		  color: white;
+		  padding: 5em;
+		  text-align: center;
+	  }
+	  
+	  #spacer{
+		  padding:2em;
+	  }
+	  
+      .navBar {
+        background-color: #15344b;
+        height: 100px;
+        padding: 5px;
+      }
+      .navButton {
+        background-color: #377096;
+        text-align: center;
+		padding: 1.5em;
+        border: solid 5px;
+        transition-duration: 0.4s;
+      }
+      .navButton:hover {
+        background-color: #316282;
+		background-color: #187cbf;
+      }
+      .navButton:active {
+        background-color: #265575;
+		background-color: #187cbf;
+		background-color: #166499;
+      }
+      .contentDiv {
+        background-color: #15344b;
+        height: auto;
+        border: solid 5px;
+		padding: 1em;
+		width:75%;
+		margin: auto;
+      }
+		
+	.blankSpace {
+		background-color: #15344b;
+		border: 0px;
+	}
+	
+      #gameCoverImage {
+        padding-top: 5px;
+        padding-bottom: 1em;
+        width: 100px;
+		height: 200px;
+      }
