@@ -8,51 +8,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-
+	<link rel="stylesheet" href="css/style.css">
     <title>Store</title>
-    <style>
-      body {
-        background-color: #171a21;
-      }
-	  p {
-		color: #eaeaea;
-	  }
-      .navBar {
-        background-color: #15344b;
-        height: 100px;
-        padding: 5px;
-      }
-      .navButton {
-        background-color: #377096;
-        text-align: center;
-		padding: 1.5em;
-        border: solid 5px;
-        transition-duration: 0.4s;
-      }
-      .navButton:hover {
-        background-color: #316282;
-		background-color: #187cbf;
-      }
-      .navButton:active {
-        background-color: #265575;
-		background-color: #187cbf;
-		background-color: #166499;
-      }
-      .contentDiv {
-        background-color: #15344b;
-        height: 275px;
-        padding-top: 5px;
-        border-top: solid 5px; 
-      }
-      #gameCoverImage {
-        padding-top: 5px;
-        padding-bottom: 1em;
-        width: 75%;
-      }
-  
-    </style>
+
   </head>
   <body>
+	<div id="nameBar">
+		<h1>aXon</h1>
+	</div>
+  
     <div class="container">
       <div class="row navBar">
         <div class="navButton col-lg-3">
@@ -68,82 +32,84 @@
           About
         </div>          
       </div>
-
-      <div class="row contentDiv">
-          <div class="col-lg-3">
-            <img id="gameCoverImage" src="images/gameCovers/World of Warcraft-285x380.jpg">
-          </div>
-          <div class="col-lg-9 ">
-            <p>
-                World of Warcraft is a massively multiplayer online role-playing game released in 2004 by Blizzard Entertainment. It is the fourth released game set in the Warcraft fantasy universe. 
-            </p>
-          </div>
-      </div>
-
-      <div class="row contentDiv">
-          <div class="col-lg-3">
-            <img id="gameCoverImage" src="images/gameCovers/Overwatch-285x380.jpg">
-          </div>
-          <div class="col-lg-9 ">
-            <p>
-                Overwatch is a team-based multiplayer first-person shooter video game developed and published by Blizzard Entertainment, which released on May 24, 2016 for PlayStation 4, Xbox One, and Windows. 
-            </p>          
-          </div>
-      </div>
-
-      <div class="row contentDiv">
-          <div class="col-lg-3">
-            <img id="gameCoverImage" src="images/gameCovers/Fortnite-285x380.jpg">
-          </div>
-          <div class="col-lg-9 ">
-            <p>
-                Fortnite is a co-op sandbox survival game developed by Epic Games and People Can Fly and published by Epic Games.             
-            </p>
-          </div>
-      </div>
-
-      <div class="row contentDiv">
-          <div class="col-lg-3">
-            <img id="gameCoverImage" src="images/gameCovers/Minecraft-285x380.jpg">
-          </div>
-          <div class="col-lg-9 ">
-            <p>
-                Minecraft is a sandbox video game created and designed by Swedish game designer Markus "Notch" Persson, and later fully developed and published by Mojang.         
-            </p>  
-          </div>
-      </div>
-
-      <div class="row contentDiv">
-          <div class="col-lg-3">
-            <img id="gameCoverImage" src="images/gameCovers/Fallout 4-285x380.jpg">
-          </div>
-          <div class="col-lg-9 ">
-            <p>
-                Fallout 4 is a post-apocalyptic action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks.      
-            </p>    
-          </div>
-      </div>
-
-      <div class="row contentDiv">
-          <div class="col-lg-3">
-            <img id="gameCoverImage" src="images/gameCovers/Spore-285x380.jpg">
-          </div>
-          <div class="col-lg-9 ">
-            <p>
-                Spore is a 2008 life simulation real-time strategy single-player sandbox god game developed by Maxis and designed by Will Wright, released for Microsoft Windows and Mac OS X. 
-            </p>    
-          </div>
-      </div>
-
-    </div>
-
-
-
-
-
+	</div>
 	
+	<div id="spacer">
+	</div>
+	
+	<div class="row contentDiv">
+		<div class="card col-lg-1 blankSpace">
+		</div>
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/gameCovers/World of Warcraft-285x380.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">World of Warcraft</h5>
+				<p class="card-text">World of Warcraft is a massively multiplayer online role-playing game released in 2004 by Blizzard Entertainment. It is the fourth released game set in the Warcraft fantasy universe.</p>
+				<a href="#" class="btn btn-primary">Product Page</a>
+			</div>
+		</div>
+		<div class="card col-lg-1 blankSpace">
+		</div>		
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/gameCovers/Overwatch-285x380.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Overwatch</h5>
+				<p class="card-text">Overwatch is a team-based multiplayer first-person shooter video game developed and published by Blizzard Entertainment, which released on May 24, 2016 for PlayStation 4, Xbox One, and Windows.</p>
+				<a href="#" class="btn btn-primary">Product Page</a>
+			</div>
+		</div>
+		<div class="card col-lg-1 blankSpace">
+		</div>		
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/gameCovers/Fortnite-285x380.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Fortnite</h5>
+				<p class="card-text">Fortnite is a co-op sandbox survival game developed by Epic Games and People Can Fly and published by Epic Games.</p>
+				<a href="#" class="btn btn-primary">Product Page</a>
+			</div>
+		</div>
+		<div class="card col-lg-1 blankSpace">
+		</div>		
+	</div>
 
-
+	<div id="spacer">
+	</div>
+	
+	<div class="row contentDiv">
+		<div class="card col-lg-1 blankSpace">
+		</div>
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/gameCovers/Minecraft-285x380.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Minecraft</h5>
+				<p class="card-text"> Minecraft is a sandbox video game created and designed by Swedish game designer Markus "Notch" Persson, and later fully developed and published by Mojang.</p>
+				<a href="#" class="btn btn-primary">Product Page</a>
+			</div>
+		</div>
+		<div class="card col-lg-1 blankSpace">
+		</div>
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/gameCovers/Fallout 4-285x380.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Fallout 4</h5>
+				<p class="card-text">Fallout 4 is a post-apocalyptic action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks.</p>
+				<a href="#" class="btn btn-primary">Product Page</a>
+			</div>
+		</div>
+		<div class="card col-lg-1 blankSpace">
+		</div>		
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/gameCovers/Spore-285x380.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Spore</h5>
+				<p class="card-text">Spore is a 2008 life simulation real-time strategy single-player sandbox god game developed by Maxis and designed by Will Wright, released for Microsoft Windows and Mac OS X.</p>
+				<a href="#" class="btn btn-primary">Product Page</a>
+			</div>
+		</div>
+		<div class="card col-lg-1 blankSpace">
+		</div>
+	</div>
+	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
