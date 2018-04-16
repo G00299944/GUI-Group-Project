@@ -6,51 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-	  <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+
     <title>Store</title>
-
-
-  </head>
-   <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand" href="#">Pulse</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Library.html">Library</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Categories
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="Action.html">Action</a>
-          <a class="dropdown-item" href="Horror.html">Horror</a>
-          <a class="dropdown-item" href="Adventure.html">Adventure</a>
-        </div>
-      </li>
-	  <li class="nav-item">
-	 <a class="nav-link " >Log In</a>
-	 </li>
-	 <li class="nav-item">
-    <a class="nav-link " >Basket</a>
-	</li>
-    </ul>
-	
-  </div>
+    <style>
+      body {
+        background-color: #171a21;
+      }
+	  p {
+		color: #eaeaea;
+	  }
+      .navBar {
+        background-color: #15344b;
+        height: 100px;
+        padding: 5px;
+      }
+      .navButton {
+        background-color: #377096;
+        text-align: center;
+		padding: 1.5em;
+        border: solid 5px;
+        transition-duration: 0.4s;
+      }
+      .navButton:hover {
+        background-color: #316282;
+		background-color: #187cbf;
+      }
+      .navButton:active {
+        background-color: #265575;
+		background-color: #187cbf;
+		background-color: #166499;
+      }
+      .contentDiv {
+        background-color: #15344b;
+        height: 275px;
+        padding-top: 5px;
+        border-top: solid 5px; 
+      }
+      #gameCoverImage {
+        padding-top: 5px;
+        padding-bottom: 1em;
+        width: 75%;
+      }
   
-  </nav>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row navBar">
+        <div class="navButton col-lg-3">
+          Store
+        </div> 
+        <div class="navButton col-lg-3">
+          Cart
+        </div>
+        <div class="navButton col-lg-3">
+          Library
+        </div>             
+        <div class="navButton col-lg-3">
+          About
+        </div>          
+      </div>
 
       <div class="row contentDiv">
           <div class="col-lg-3">
