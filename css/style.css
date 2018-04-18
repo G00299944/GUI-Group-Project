@@ -56,3 +56,16 @@
         width: 100px;
 		height: 200px;
       }
+	  
+	.gameDescription{	background-color:grey;
+			border: 20px solid #171a21;
+			height: 200px;
+			}
+	.GameCarousel{	background-color:#c0c0c0;
+			border: 20px solid #171a21;
+			height: 400px;
+			}
+	.BasketList{	background-color:#c0c0c0;
+			border: 20px solid #171a21;
+			height: 500px;
+			}
