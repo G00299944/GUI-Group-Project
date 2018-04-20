@@ -16,5 +16,5 @@ function parseLoggedInUser() {
 }
 
 function dispCurrentUser() {
-	document.getElementById("userName").innerHTML = "Hi " + currentUser.fName + "!";
+	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + "! <br> <button id='logoutButton' onclick:'logOut()'>Logout</button>"
 }

@@ -13,7 +13,7 @@ function User(email, pWord, fName, lName, age, phNum, accBalance) {
 // User Object Instantiation
 var users = [];
 users[0] = new User("dnbutler@gmail.com", "testPassword27", "Darren", "Butler", 23, 353892382755, 100.00); // Darren
-users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 18, 353871234567, 0.01); // Connor
+users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 16, 353871234567, 0.01); // Connor
 users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356, 64.32); // Evan
 
 // Other Vars
@@ -36,6 +36,7 @@ function login() {
 				alert("logged in!");
 				x = i;
 				stringLoggedInUser(users[x]);
+				document.getElementById("loginFields").innerHTML = "Welcome " + users[x].fName + "! <br> <button id='logoutButton' onclick:'logOut()'>Logout</button>";
 			}
 		}// if
 
@@ -45,6 +46,11 @@ function login() {
 	alert("Incorrect email or password!");	
 }
 
+//=== Logout Function Template ===//
+function logOut()
+{
+	
+}
 
 // Logged in User
 function stringLoggedInUser(obj) {
