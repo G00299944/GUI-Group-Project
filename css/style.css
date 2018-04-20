@@ -6,14 +6,30 @@
 	  }
 	  
 	  #nameBar{
-		  color: white;
-		  padding: 5em;
-		  text-align: center;
+		color: white;
+		padding: 5em;
+		text-align: center;
 	  }
 	  
 	  #spacer{
-		  padding:2em;
+		padding:2em;
 	  }
+	  
+	  #loginFields{
+			float: right;
+			padding: 2em;
+			color: red;
+	  }
+	  
+	  a{
+		color: #171a21;
+		text-decoration-style: none;
+	  }
+	  a:hover{
+		color: blue;
+		text-decoration-style: none
+	  }
+	  
 	  
       .navBar {
         background-color: #15344b;

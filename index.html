@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/style.css">
-    <title>Store</title>
+    <title>aXon | Store</title>
 
   </head>
   <body>
+	<div id="loginFields">
+		Email: <input type="text" id="emailIn">
+		Password: <input type="password" id="passwordIn">
+		<button onclick="login()">login</button>
+	</div>
+	
+	<br>
+	
 	<div id="nameBar">
 		<h1>aXon</h1>
-	</div>
-	<div class="row">
-	email: <input type="text" id="emailIn"> 
-	<br><br>
-	password: <input type="password" id="passwordIn">
-	<button onclick="login()">login</button>	
 	</div>
   
     <div class="container">
       <div class="row navBar">
-        <div class="navButton col-lg-3">
+        <div class="navButton col-lg-3" onclick="href='index.html'">
           Store
         </div> 
         <div class="navButton col-lg-3">
