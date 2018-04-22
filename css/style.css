@@ -1,93 +1,92 @@
-      body {
-        background-color: #171a21;
-      }
+/* Default class styles */
+	body {
+		background-color: #171a21;
+	}
 	  
-	  p {
-		color: #eaeaea;
-	  }
+	p {
+		color: red;
+	}
 	  
-	  #nameBar{
+	#nameBar{
 		color: white;
 		padding: 5em;
 		text-align: center;
-	  }
+	}
 	  
-	  #spacer{
+	#spacer{
 		padding:2em;
-	  }
+	}
 	  
-	  #loginFields{
-			float: right;
-			padding: 2em;
-			color: red;
-	  }
-	  
-	  a{
+	#loginFields{
+		float: right;
+		padding: 2em;
+		color: red;
+	}
+
+/* Links */
+	a{
 		color: #171a21;
 		text-decoration-style: none;
-	  }
-	  a:hover{
+	}
+	a:hover{
 		color: blue;
 		text-decoration-style: none
-	  }
-	  
-      .navBar {
-        background-color: #15344b;
-        height: 100px;
-        padding: 5px;
-      }
-      .navButton {
-        background-color: #377096;
-        text-align: center;
+	}
+
+/* Navigation Bar */	  
+	.navBar {
+		background-color: #15344b;
+		height: 100px;
+		padding: 5px;
+	}
+	.navButton {
+		background-color: #377096;
+		text-align: center;
 		padding: 1.5em;
-        border: solid 5px;
-        transition-duration: 0.4s;
-      }
-      .navButton:hover {
-        background-color: #316282;
+		border: solid 5px;
+		transition-duration: 0.4s;
+	  }
+	.navButton:hover {
+		background-color: #316282;
 		background-color: #187cbf;
-      }
-      .navButton:active {
-        background-color: #265575;
+	  }
+	.navButton:active {
+		background-color: #265575;
 		background-color: #187cbf;
 		background-color: #166499;
-      }
-      .contentDiv {
-        background-color: #15344b;
-        height: auto;
-        border: solid 5px;
-		padding: 1em;
-		width:75%;
-		margin: auto;
-      }
-		
-	  .blankSpace {
+	  }
+ 
+/* StorePage Cards */ 
+	#gameContainer{
+		background-color: #15344b;
+		border: solid 5px;
+		padding-top: 2.5em;
+		padding-left: 2.5em;
+		padding-right: 2.5em;
+	}
+	.card-deck .card {
+		min-height: 150px;
+		min-width: 100px;
+	}
+
+/* Misc Styles (unsorted)*/		
+	.blankSpace {
 		background-color: #15344b;
 		border: 0px;
 		margin: auto;
-	  }
-	  
-	  .card {
-		
-		  
-	  }
-	
-      #gameCoverImage {
-        padding-top: 5px;
-        padding-bottom: 1em;
-        width: 100px;
+	}
+	.gameDescription{	
+		background-color:grey;
+		border: 20px solid #171a21;
 		height: 200px;
-      }
-	  
-	.gameDescription{	background-color:grey;
-			border: 20px solid #171a21;
-			height: 200px;
-			}
-	.GameCarousel{	background-color:#c0c0c0;
-			border: 20px solid #171a21;
-			height: 400px;
-			}
-	.BasketList{	background-color:#c0c0c0;
-			border: 20px solid #171a21;
-			height: 500px;
-			}
+	}
+	.GameCarousel{	
+		background-color:#c0c0c0;
+		border: 20px solid #171a21;
+		height: 400px;
+	}
+	.BasketList{	
+		background-color:#c0c0c0;
+		border: 20px solid #171a21;
+		height: 500px;
+	}
