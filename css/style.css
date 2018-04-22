@@ -1,6 +1,7 @@
       body {
         background-color: #171a21;
       }
+	  
 	  p {
 		color: #eaeaea;
 	  }
@@ -29,7 +30,6 @@
 		color: blue;
 		text-decoration-style: none
 	  }
-	  
 	  
       .navBar {
         background-color: #15344b;
@@ -61,10 +61,16 @@
 		margin: auto;
       }
 		
-	.blankSpace {
+	  .blankSpace {
 		background-color: #15344b;
 		border: 0px;
-	}
+		margin: auto;
+	  }
+	  
+	  .card {
+		
+		  
+	  }
 	
       #gameCoverImage {
         padding-top: 5px;
