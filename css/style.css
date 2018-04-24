@@ -1,30 +1,29 @@
 /* Default class styles */
 	body {
-		background-color: #171a21;
-		background: linear-gradient(#15344b , #171a21, #15344b );
-		background: url("../images/backgrounds/aXon3.jpg");
-		
-		background-repeat: repeat-x;
-		background-size: cover;
+		background: rgb(23,26,33);
+		background: linear-gradient(90deg, rgba(23,26,33,1) 10%, rgba(23,62,89,1) 25%, rgba(55,112,151,1) 50%, rgba(23,62,89,1) 75%, rgba(23,26,33,1) 90%); 
 		height: 2300px;
+		font-family: 'Gugi', cursive;
 	}
 	  
 	p {
 		color: #212529;
+		font-family: 'Gugi', cursive;
 	}
 	  
+	h1 {
+		font-family: 'Gugi', cursive;
+		font-size: 100px;
+		color: #171a21;
+		text-shadow: 1px 1px #bebcba;
+
+	}
+
 	#nameBar{
 		color: white;
 		padding: 5em;
 		text-align: center;
-		border: 5px solid;
-		border-color: black;
-		width: 400px;
-		background-color: #15344b;
-		background: url("../images/backgrounds/curiousity.gif");
-		background-size: cover;
-		margin: auto;
-		border-radius: 15px 50px;
+		height: 200px;
 	}
 	  
 	#spacer{
@@ -34,13 +33,14 @@
 	#loginFields{
 		float: right;
 		padding: 2em;
-		color: red;
+		color: #bab8b6;
 	}
 
 /* Links */
 	a{
 		color: #171a21;
 		text-decoration-style: none;
+		outline: 0;
 	}
 	a:hover{
 		text-decoration-style: none;
@@ -102,4 +102,15 @@
 		background-color:#c0c0c0;
 		border: 20px solid #171a21;
 		height: 500px;
+	}
+
+
+	/*login field styling*/
+	input[type="text"], textarea, input[type="password"] {
+
+		background-color : #bdbbb9; 
+	  
+	}
+	input {
+		width: 200px;
 	}
