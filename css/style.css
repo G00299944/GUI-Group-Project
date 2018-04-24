@@ -41,9 +41,11 @@
 		color: #171a21;
 		text-decoration-style: none;
 		outline: 0;
+		text-decoration: none;
 	}
 	a:hover{
 		text-decoration-style: none;
+		text-decoration: none;
 	}
 
 /* Navigation Bar */	  
@@ -80,7 +82,17 @@
 	.card-deck .card {
 		min-height: 150px;
 		min-width: 100px;
+		background-color: #377096;
+		-webkit-text-stroke-width: 0.2px;
+		-webkit-text-stroke-color: #bdbbb9;
 	}
+/* StorePage Card Buttons*/
+	.btn {
+		background-color: #187cbf;
+	}
+	.btn:hover {
+		background-color: #5c7e10;
+	}	
 
 /* Misc Styles (unsorted)*/		
 	.blankSpace {
