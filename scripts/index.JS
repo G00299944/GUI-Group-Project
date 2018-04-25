@@ -9,12 +9,33 @@ function User(email, pWord, fName, lName, age, phNum, accBalance) {
 	this.accBalance = accBalance;
 }
 
+// Game Object Template
+function Game(id, title, price, ageReq) {
+	this.id = id;
+	this.title = title;
+	this.price = price;
+	this.ageReq = ageReq;
+}
+
 
 // User Object Instantiation
 var users = [];
 users[0] = new User("dnbutler@gmail.com", "testPassword27", "Darren", "Butler", 23, 353892382755, 100.00); // Darren
 users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 16, 353871234567, 0.01); // Connor
 users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356, 64.32); // Evan
+
+// Game Object Instantiation
+var games = [];
+games[0] = new Game(1234, "World of Warcraft",44.99, 13);
+games[1] = new Game(1, "Overwatch", 39.99, 12);
+games[2] = new Game(2, "Fornite", 0.00, 13);
+games[3] = new Game(3, "Minecraft", 23.95, 5);
+games[4] = new Game(4, "Fallout 4", 29.99, 18);
+games[5] = new Game(5, "Spore", 14.99, 8);
+
+// Cart Array
+var cart = [];
+var carSize = 0;
 
 // Other Vars
 var x;
@@ -36,7 +57,7 @@ function login() {
 				alert("logged in!");
 				x = i;
 				stringLoggedInUser(users[x]);
-				document.getElementById("loginFields").innerHTML = "Welcome " + users[x].fName + "! <br> <button id='logoutButton' onclick:'logOut()'>Logout</button>";
+				document.getElementById("loginFields").innerHTML = "Welcome " + users[x].fName;
 			}
 		}// if
 
@@ -46,11 +67,6 @@ function login() {
 	alert("Incorrect email or password!");	
 }
 
-//=== Logout Function Template ===//
-function logOut()
-{
-	
-}
 
 // Logged in User
 function stringLoggedInUser(obj) {
@@ -58,4 +74,10 @@ function stringLoggedInUser(obj) {
 	localStorage.loggedInUserArrayPos = JSON.stringify(x);
 }
 
+// Add to Cart
+function gameToCart(game) {
+	cart[carSize] = games[game];
+	carSize++;
 
+	alert(games[game].title + " added to cart!");
+}
