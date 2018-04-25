@@ -1,30 +1,29 @@
 /* Default class styles */
 	body {
-		background-color: #171a21;
-		background: linear-gradient(#15344b , #171a21, #15344b );
-		background: url("../images/backgrounds/aXon3.jpg");
-		
-		background-repeat: repeat-x;
-		background-size: cover;
+		background: rgb(23,26,33);
+		background: linear-gradient(90deg, rgba(23,26,33,1) 10%, rgba(23,62,89,1) 25%, rgba(55,112,151,1) 50%, rgba(23,62,89,1) 75%, rgba(23,26,33,1) 90%); 
 		height: 2300px;
+		font-family: 'Gugi', cursive;
 	}
 	  
 	p {
 		color: #212529;
+		font-family: 'Gugi', cursive;
 	}
 	  
+	h1 {
+		font-family: 'Gugi', cursive;
+		font-size: 100px;
+		color: #171a21;
+		text-shadow: 1px 1px #bebcba;
+
+	}
+
 	#nameBar{
 		color: white;
 		padding: 5em;
 		text-align: center;
-		border: 5px solid;
-		border-color: black;
-		width: 400px;
-		background-color: #15344b;
-		background: url("../images/backgrounds/curiousity.gif");
-		background-size: cover;
-		margin: auto;
-		border-radius: 15px 50px;
+		height: 200px;
 	}
 	  
 	#spacer{
@@ -34,16 +33,19 @@
 	#loginFields{
 		float: right;
 		padding: 2em;
-		color: red;
+		color: #bab8b6;
 	}
 
 /* Links */
 	a{
 		color: #171a21;
 		text-decoration-style: none;
+		outline: 0;
+		text-decoration: none;
 	}
 	a:hover{
 		text-decoration-style: none;
+		text-decoration: none;
 	}
 
 /* Navigation Bar */	  
@@ -52,7 +54,9 @@
 		height: 100px;
 		padding: 5px;
 	}
-	.navButton {
+	.linkTags {
+		width:282px;
+		text-decoration:none;
 		background-color: #377096;
 		text-align: center;
 		padding: 1.5em;
@@ -60,10 +64,12 @@
 		transition-duration: 0.4s;
 	  }
 	.navButton:hover {
+		text-decoration:none;
 		background-color: #316282;
 		background-color: #187cbf;
 	  }
 	.navButton:active {
+		text-decoration:none;
 		background-color: #265575;
 		background-color: #187cbf;
 		background-color: #166499;
@@ -80,26 +86,61 @@
 	.card-deck .card {
 		min-height: 150px;
 		min-width: 100px;
+		background-color: #377096;
+		-webkit-text-stroke-width: 0.2px;
+		-webkit-text-stroke-color: #bdbbb9;
 	}
+/* StorePage Card Buttons*/
+	.btn {
+		background-color: #187cbf;
+	}
+	.btn:hover {
+		background-color: #5c7e10;
+	}	
 
-/* Misc Styles (unsorted)*/		
+/* Game Personal Pages*/		
 	.blankSpace {
 		background-color: #15344b;
 		border: 0px;
 		margin: auto;
 	}
-	.gameDescription{	
-		background-color:grey;
-		border: 20px solid #171a21;
-		height: 200px;
-	}
-	.GameCarousel{	
-		background-color:#c0c0c0;
-		border: 20px solid #171a21;
+	.carousel {
 		height: 400px;
 	}
 	.BasketList{	
-		background-color:#c0c0c0;
+		background-color:#316282;
 		border: 20px solid #171a21;
 		height: 500px;
 	}
+	.GameCarousel{
+		height: 550px;
+		border: 20px solid #171a21;
+		background-color: #316282;
+	}
+	.imageBox{
+		float:center;
+	}
+	.d-block{
+		height:400px;
+		width:500px;
+	}
+	.BoxImage{
+		position: relative;
+		left: 70px;
+		top: 30px;
+	}
+
+
+	/*login field styling*/
+	input[type="text"], textarea, input[type="password"] {
+
+		background-color : #bdbbb9; 
+	  
+	}
+	input {
+		width: 200px;
+	}
+	
+	/* Carousel css */ 
+	
+		
