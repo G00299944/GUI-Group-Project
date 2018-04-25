@@ -26,7 +26,7 @@ users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356,
 
 // Game Object Instantiation
 var games = [];
-games[0] = new Game(1234, "World of Warcraft",44.99, 13);
+games[0] = new Game(0, "World of Warcraft",44.99, 13);
 games[1] = new Game(1, "Overwatch", 39.99, 12);
 games[2] = new Game(2, "Fornite", 0.00, 13);
 games[3] = new Game(3, "Minecraft", 23.95, 5);
@@ -68,7 +68,7 @@ function login() {
 }
 
 
-// Logged in User
+// Stringify - Logged in User
 function stringLoggedInUser(obj) {
 	localStorage.loggedInUser = JSON.stringify(users[x]);
 	localStorage.loggedInUserArrayPos = JSON.stringify(x);
@@ -80,4 +80,9 @@ function gameToCart(game) {
 	carSize++;
 
 	alert(games[game].title + " added to cart!");
+}
+
+// Stringify - cart
+function stringCart() {
+	localStorage.cart = JSON.stringify(cart);
 }

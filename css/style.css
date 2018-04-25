@@ -54,7 +54,7 @@
 		height: 100px;
 		padding: 5px;
 	}
-	.linkTags,.navButton {
+	.linkTags {
 		width:282px;
 		text-decoration:none;
 		background-color: #377096;
@@ -126,20 +126,8 @@
 	}
 	.BoxImage{
 		position: relative;
-		left: 0px;
+		left: 70px;
 		top: 30px;
-	}
-	.ESRBImage{
-		position: relative;
-		left: 0px;
-		top:55px;
-	}
-	.BasketText{
-		position: relative;
-		left: 90px;
-		bottom:155px;
-		text-align: right;
-		width:10px;
 	}
 
 
