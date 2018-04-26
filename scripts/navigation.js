@@ -17,7 +17,7 @@ function pageNavigation(page){
 			window.location.href = "library.html";
 			break;			
 		case "about":
-			window.location.href = "about.html";
+			window.location.href = "account.html";
 			break;						
 	}
 }
