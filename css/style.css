@@ -54,7 +54,7 @@
 		height: 100px;
 		padding: 5px;
 	}
-	.linkTags,.navButton {
+	.linkTags {
 		width:282px;
 		text-decoration:none;
 		background-color: #377096;
@@ -63,12 +63,13 @@
 		border: solid 5px;
 		transition-duration: 0.4s;
 	  }
-	.navButton:hover {
+	.linkTags:hover {
 		text-decoration:none;
-		background-color: #316282;
+		color: black;
+		background-color: #265575;
 		background-color: #187cbf;
 	  }
-	.navButton:active {
+	.linkTags:active {
 		text-decoration:none;
 		background-color: #265575;
 		background-color: #187cbf;
