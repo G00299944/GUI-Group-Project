@@ -5,31 +5,25 @@
 		height: 2300px;
 		font-family: 'Gugi', cursive;
 	}
-	  
 	p {
 		color: #212529;
 		font-family: 'Gugi', cursive;
 	}
-	  
 	h1 {
 		font-family: 'Gugi', cursive;
 		font-size: 100px;
 		color: #171a21;
 		text-shadow: 1px 1px #bebcba;
-
 	}
-
 	#nameBar{
 		color: white;
 		padding: 5em;
 		text-align: center;
 		height: 200px;
-	}
-	  
+	}  
 	#spacer{
 		padding:2em;
-	}
-	  
+	}  
 	#loginFields{
 		float: right;
 		padding: 2em;
@@ -90,6 +84,7 @@
 		-webkit-text-stroke-width: 0.2px;
 		-webkit-text-stroke-color: #bdbbb9;
 	}
+	
 /* StorePage Card Buttons*/
 	.btn {
 		background-color: #187cbf;
@@ -107,14 +102,26 @@
 	.carousel {
 		height: 400px;
 	}
+	.sidebox {
+		border: 5px solid #171a21;
+		background-color: #316282;
+		height: 600px;
+	}
+	.sideboxGameCover {
+		height: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.BasketList{	
 		background-color:#316282;
-		border: 20px solid #171a21;
+		border: 5px solid #171a21;
 		height: 500px;
 	}
 	.GameCarousel{
-		height: 550px;
-		border: 20px solid #171a21;
+		padding: 2em;
+		height: 600px;
+		border: 5px solid #171a21;
 		background-color: #316282;
 	}
 	.imageBox{
@@ -130,17 +137,11 @@
 		top: 30px;
 	}
 
-
 	/*login field styling*/
 	input[type="text"], textarea, input[type="password"] {
-
 		background-color : #bdbbb9; 
-	  
 	}
 	input {
 		width: 200px;
 	}
 	
-	/* Carousel css */ 
-	
-		

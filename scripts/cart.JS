@@ -48,9 +48,7 @@ function generateCheckoutTable() {
 	cell1.innerHTML = "Total: ";
 	cell2.innerHTML = " ";
 	cell3.innerHTML = "$" + totalPrice.toFixed(2);
-
 }
-
 
 // Parsing
 function parseLoggedInUser() {

@@ -4,7 +4,6 @@ window.onload = function() {
 	dispCurrentUser();
 }		
 
-
 // vars
 var currentUser;
 var currentUserArrayPos;
@@ -16,5 +15,5 @@ function parseLoggedInUser() {
 }
 
 function dispCurrentUser() {
-	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + "! <br> <button id='logoutButton' onclick:'logOut()'>Logout</button>"
+	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + "!";
 }
