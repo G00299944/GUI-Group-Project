@@ -13,6 +13,7 @@ var currentUserArrayPos;
 var cart = [];
 var i;
 var totalPrice = 0;
+var couponCode = "GUIPROJECT";
 
 
 function basketTotal() {
@@ -48,6 +49,78 @@ function generateCheckoutTable() {
 	cell1.innerHTML = "Total: ";
 	cell2.innerHTML = " ";
 	cell3.innerHTML = "$" + totalPrice.toFixed(2);
+}
+
+// Checkout
+function checkout() {
+	var inputCode = document.getElementById("couponCode").value;
+	var sufficientFunds = false;
+	var ageReqsMet = false;
+	var highestAge = 0;
+
+	if(inputCode == couponCode) {
+		totalPrice = totalPrice - (totalPrice*0.1); // subtract coupon 10% from total price
+
+		// if's - check for sufficient funds and age requirement
+		if(currentUser.accBalance > totalPrice) {
+			sufficientFunds = true;
+		}// sufficient funds
+		for(i = 0; i < cart.length; i++) { // cycle through cart array to find out the highest age requirement
+			if(highestAge < cart[i].ageReq) {
+				highestAge = cart[i].ageReq;
+			}
+		}
+		if(currentUser.age > highestAge) {
+			ageReqsMet = true;
+		}// age requirement
+		//======================================================
+
+		// if's - Error messages for age && funds = pruchase outcomes
+		if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, pruchase = 0;
+			alert("insufficient funds & too young!");
+		}
+		else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, pruchase = 0;
+			alert("too young!");
+		}
+		else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, pruchase = 0;
+			alert("insufficient funds!");
+		}
+		else { 
+			alert("you bought games yo"); // age = 1, funds = 1, pruchase = 1;
+		}
+
+	}
+	else { // if no coupon code was entered, or invalid coupon code
+
+		// if's - check for sufficient funds and age requirement
+		if(currentUser.accBalance > totalPrice) {
+			sufficientFunds = true;
+		}// sufficient funds
+		for(i = 0; i < cart.length; i++) { // cycle through cart array to find out the highest age requirement
+			if(highestAge < cart[i].ageReq) {
+				highestAge = cart[i].ageReq;
+			}
+		}
+		if(currentUser.age > highestAge) {
+			ageReqsMet = true;
+		}// age requirement
+		//======================================================
+
+		// if's - Error messages for age && funds = pruchase outcomes
+		if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, pruchase = 0;
+			alert("insufficient funds & too young!");
+		}
+		else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, pruchase = 0;
+			alert("too young!");
+		}
+		else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, pruchase = 0;
+			alert("insufficient funds!");
+		}
+		else { 
+			alert("you bought games yo"); // age = 1, funds = 1, pruchase = 1;
+		}
+	
+	}// coupon code
 }
 
 // Parsing
