@@ -21,8 +21,8 @@ function Game(id, title, price, ageReq) {
 // User Object Instantiation
 var users = [];
 users[0] = new User("dnbutler@gmail.com", "testPassword27", "Darren", "Butler", 23, 353892382755, 100.00); // Darren
-users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 16, 353871234567, 0.01); // Connor
-users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356, 64.32); // Evan
+users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 10, 353871234567, 0.01); // Connor
+users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356, 11.32); // Evan
 users[3] = new User("gagnew@gmit.ie", "java", "Gagnew", "Junior", 56, 02356, 64.32); // Gagnew
 
 // Game Object Instantiation
