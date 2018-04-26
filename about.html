@@ -12,11 +12,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet"> 
 
 		<link rel="stylesheet" href="css/style.css">
-    <title>aXon | About</title>
+    <title>aXon | Store</title>
 
   </head>
   <body>
 	<div id="loginFields">
+		Email: <input type="text" id="emailIn">
+		Password: <input type="password" id="passwordIn">
+		<button onclick="login()">login</button>
 	</div>
 	
 	<br>
@@ -29,20 +32,24 @@
 	
 	<br><br>
 	
-    <div class="container">
-      <div class="row navBar">	  
-		<div id="store" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
+ <div class="container">
+            <div class="row navBar">
+	  
+		<a href="index.html" class= "linkTags"><div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
           Store
-        </div>
-		<div id="cart" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        </div></a>
+		
+        <a href="index.html" class= "linkTags"> <div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
           Cart
-        </div>	
-        <div id="library" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        </div></a>
+		
+         <a href="index.html" class= "linkTags"><div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
           Library
-        </div>
-        <div id="about" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        </div></a>
+		
+         <a href="index.html" class= "linkTags"><div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
           About
-        </div>      
+        </div> </a>       
       </div>
 	</div>
 	
@@ -53,7 +60,6 @@
 
 	<!--Javascript-->
 	<script src="scripts/index.JS"></script>
-	<script src="scripts/navigation.JS"></script>
 	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
