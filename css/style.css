@@ -108,29 +108,25 @@
 	}	
 
 /* Game Personal Pages*/		
-	.blankSpace {
-		background-color: #15344b;
-		border: 0px;
-		margin: auto;
-	}
+	
 	.carousel {
 		height: 400px;
 	}
 	.sidebox {
+		
 		border: 5px solid #171a21;
+		border-left:none;
 		background-color: #316282;
 		height: 600px;
+		
 	}
 	.sideboxGameCover {
 		height: 300px;
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.BasketList{	
-		background-color:#316282;
-		border: 5px solid #171a21;
-		height: 500px;
+		padding: 10px;
+		margin:auto;
+		margin-left:auto;
+
 	}
 	.GameCarousel{
 		padding: 2em;
@@ -145,11 +141,10 @@
 		height:400px;
 		width:500px;
 	}
-	.BoxImage{
-		position: relative;
-		left: 70px;
-		top: 30px;
+	.list-group-item{
+		background-color:#377096;
 	}
+	
 
 	/*login field styling*/
 	input[type="text"], textarea, input[type="password"] {
