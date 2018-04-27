@@ -163,9 +163,15 @@ function addGames() {
 	for(i = 0; i < cart.length; i++) {
 		currentUser.gameLibrary[i] = cart[i].id;
 	}
+	stringLoggedInUser(currentUser);
 }
 
 function updateBalance() {
 	currentUser.accBalance -= totalPrice.toFixed(2);
 	dispCurrentUser();
+	stringLoggedInUser(currentUser);
+}
+
+function stringLoggedInUser(obj) {
+	localStorage.loggedInUser = JSON.stringify(currentUser);
 }
