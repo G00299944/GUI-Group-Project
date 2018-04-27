@@ -1,4 +1,4 @@
-// on load
+1// on load
 window.onload = function() {
 	parseLoggedInUser();
 	dispCurrentUser();
@@ -24,7 +24,7 @@ function dispGameLibrary() {
 	ownedGamesArray = currentUser.gameLibrary;
 
 	for(i = 0; i < ownedGamesArray.length; i++) {
-			creatGameDiv(ownedGamesArray[i]);
+		creatGameDiv(ownedGamesArray[i]);
 	}
 
 }// dispGameLibrary
