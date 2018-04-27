@@ -169,7 +169,7 @@ function addGames() {
 	gameCount++;
 
 	for(i = gameCount; i < cart.length + gameCount; i++) {
-		currentUser.gameLibrary[i] = cart[i - gameCount].id;
+		currentUser.gameLibrary[i + gameCount] = cart[i - gameCount].id;
 	}
 	stringLoggedInUser(currentUser);
 }
