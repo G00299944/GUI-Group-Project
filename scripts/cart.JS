@@ -150,7 +150,7 @@ function parseCart() {
 }
 
 function dispCurrentUser() {
-	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName;
+	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + ", Wallet: $" + currentUser.accBalance;
 }
 
 function setCurrentDate() {
@@ -166,6 +166,6 @@ function addGames() {
 }
 
 function updateBalance() {
-	currentUser.accBalance -= totalPrice;
-
+	currentUser.accBalance -= totalPrice.toFixed(2);
+	dispCurrentUser();
 }
