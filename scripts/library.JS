@@ -16,5 +16,5 @@ function parseLoggedInUser() {
 }
 
 function dispCurrentUser() {
-	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName;
+	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + ", Wallet: $" + currentUser.accBalance;
 }

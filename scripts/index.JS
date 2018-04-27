@@ -59,7 +59,7 @@ function login() {
 				alert("logged in!");
 				x = i;
 				stringLoggedInUser(users[x]);
-				document.getElementById("loginFields").innerHTML = "Welcome " + users[x].fName;
+				document.getElementById("loginFields").innerHTML = "Welcome " + users[x].fName + ", Wallet: $" + users[x].accBalance;
 			}
 		}// if
 
