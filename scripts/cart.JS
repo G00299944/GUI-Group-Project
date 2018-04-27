@@ -160,8 +160,16 @@ function setCurrentDate() {
 }
 
 function addGames() {
-	for(i = 0; i < cart.length; i++) {
-		currentUser.gameLibrary[i] = cart[i].id;
+	var gameCount = 0;
+
+	for(i = 0; i < currentUser.gameLibrary.lenght; i++) {
+		gameCount++;
+	}
+
+	gameCount++;
+
+	for(i = gameCount; i < cart.length + gameCount; i++) {
+		currentUser.gameLibrary[i] = cart[i - gameCount].id;
 	}
 	stringLoggedInUser(currentUser);
 }
