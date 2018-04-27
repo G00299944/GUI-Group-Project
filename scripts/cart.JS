@@ -99,6 +99,8 @@ function checkout() {
 			}
 			else { 
 				alert("you bought games yo"); // age = 1, funds = 1, pruchase = 1;
+				updateBalance()
+				addGames();
 			}
 
 		}// coupon date check
@@ -131,6 +133,8 @@ function checkout() {
 		}
 		else { 
 			alert("you bought games yo"); // age = 1, funds = 1, pruchase = 1;
+			updateBalance()
+			addGames();
 		}
 	
 	}// coupon code
@@ -153,4 +157,15 @@ function setCurrentDate() {
 	year = parseInt(utc.substring(0,4));
 	month = parseInt(utc.substring(5,7));
 	date = parseInt(utc.substring(8,10));
+}
+
+function addGames() {
+	for(i = 0; i < cart.length; i++) {
+		currentUser.gameLibrary[i] = cart[i].id;
+	}
+}
+
+function updateBalance() {
+	currentUser.accBalance -= totalPrice;
+
 }

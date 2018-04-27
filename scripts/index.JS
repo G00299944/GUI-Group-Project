@@ -1,5 +1,5 @@
 // User Object Template
-function User(email, pWord, fName, lName, age, phNum, accBalance) {
+function User(email, pWord, fName, lName, age, phNum, accBalance, gameLibrary) {
 	this.email = email;
 	this.pWord = pWord;
 	this.fName = fName;
@@ -7,6 +7,7 @@ function User(email, pWord, fName, lName, age, phNum, accBalance) {
 	this.age = age;
 	this.phNum = phNum;
 	this.accBalance = accBalance;
+	this.gameLibrary = gameLibrary;
 }
 
 // Game Object Template
@@ -20,10 +21,10 @@ function Game(id, title, price, ageReq) {
 
 // User Object Instantiation
 var users = [];
-users[0] = new User("dnbutler@gmail.com", "testPassword27", "Darren", "Butler", 23, 353892382755, 100.00); // Darren
-users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 10, 353871234567, 0.01); // Connor
-users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356, 11.32); // Evan
-users[3] = new User("gagnew@gmit.ie", "java", "Gagnew", "Junior", 56, 02356, 64.32); // Gagnew
+users[0] = new User("dnbutler@gmail.com", "testPassword27", "Darren", "Butler", 23, 353892382755, 100.00, []); // Darren
+users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 10, 353871234567, 0.01, []); // Connor
+users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356, 40.32, []); // Evan
+users[3] = new User("gagnew@gmit.ie", "java", "Gagnew", "Junior", 56, 02356, 64.32, []); // Gagnew
 
 // Game Object Instantiation
 var games = [];
