@@ -1,3 +1,13 @@
+/* SITE-WIDE COLOR PALETTE
+#212529 - black;
+#15344b - darkblue;
+#377096 - blue;
+#187cbf - lightblue;
+#bdbbb9 - grey;
+#5c7e10 - green;
+#a4d007- lightgreen;
+*/
+
 /* Default class styles */
 	body {
 		background: rgb(23,26,33);
@@ -44,7 +54,7 @@
 
 /* Navigation Bar */	  
 	.navBar {
-		background-color: #15344b;
+		background-color: #212529;
 		height: 100px;
 		padding: 5px;
 	}
@@ -54,9 +64,10 @@
 		background-color: #377096;
 		text-align: center;
 		padding: 1.5em;
-		border: solid 5px;
+		border: solid 5px #15344b ;
 		transition-duration: 0.4s;
 	  }
+
 	.navButton:hover {
 		text-decoration:none;
 		background-color: #316282;
@@ -64,10 +75,13 @@
 	  }
 	.navButton:active {
 		text-decoration:none;
-		background-color: #265575;
-		background-color: #187cbf;
-		background-color: #166499;
 	  }
+	.activeButton {
+		background-color: #5c7e10;
+	}  
+	.activeButton:hover {
+		background-color: #a4d007;
+	}  	
  
 /* StorePage Cards */ 
 	#gameContainer{
@@ -145,3 +159,13 @@
 		width: 200px;
 	}
 	
+	/*checkout table styling*/
+	.checkout {
+		background-color: #377096  ;
+		border: solid;
+		
+	}
+	td {
+		border-color:#15344b  !important;
+		color: #bdbbb9;
+	}
