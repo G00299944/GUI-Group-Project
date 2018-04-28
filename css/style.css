@@ -114,7 +114,7 @@
 	}
 	.sidebox {
 		
-		border: 5px solid #171a21;
+		border: 5px solid #212529;
 		border-left:none;
 		background-color: #316282;
 		height: 600px;
@@ -131,7 +131,7 @@
 	.GameCarousel{
 		padding: 2em;
 		height: 600px;
-		border: 5px solid #171a21;
+		border: 5px solid #212529;
 		background-color: #316282;
 	}
 	.imageBox{
