@@ -10,7 +10,6 @@
 
 /* Default class styles */
 	body {
-		background: rgb(23,26,33);
 		background: linear-gradient(90deg, rgba(23,26,33,1) 10%, rgba(23,62,89,1) 25%, rgba(55,112,151,1) 50%, rgba(23,62,89,1) 75%, rgba(23,26,33,1) 90%); 
 		height: 2300px;
 		font-family: 'Gugi', cursive;
@@ -43,12 +42,10 @@
 /* Links */
 	a{
 		color: #171a21;
-		text-decoration-style: none;
 		outline: 0;
 		text-decoration: none;
 	}
 	a:hover{
-		text-decoration-style: none;
 		text-decoration: none;
 	}
 
@@ -70,8 +67,8 @@
 
 	.navButton:hover {
 		text-decoration:none;
-		background-color: #316282;
 		background-color: #187cbf;
+		cursor: pointer;
 	  }
 	.navButton:active {
 		text-decoration:none;
@@ -138,6 +135,7 @@
 		border: 5px solid #212529;
 		background-color: #15344b;
 		padding: 10px;
+		width: 365px;
 	}
 	.sideboxGameCover {
 		display: block;
@@ -156,7 +154,7 @@
 
 	.sticky {
 		position: fixed;
-		width: 350px;
+		width: 365px;
 		top: 0;
 		padding-top: 10px;
 	}
@@ -173,10 +171,12 @@
 	/*checkout table styling*/
 	.checkout {
 		background-color: #377096  ;
-		border: solid;
-		
+		border: solid;	
 	}
 	td {
 		border-color:#15344b  !important;
+		color: #bdbbb9;
+	}
+	#couponCodeText {
 		color: #bdbbb9;
 	}
