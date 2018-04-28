@@ -24,11 +24,9 @@ var year, month, date;
 var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/'); 
 //source = "https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript"
 
-
 function basketTotal() {
 	for(i = 0; i< cart.length; i++) {
 		totalPrice += cart[i].price;
-
 	}
 }
 
@@ -102,9 +100,7 @@ function checkout() {
 				updateBalance()
 				addGames();
 			}
-
 		}// coupon date check
-
 	}
 	else { // if no coupon code was entered, or invalid coupon code
 		// if's - check for sufficient funds and age requirement
@@ -136,7 +132,6 @@ function checkout() {
 			updateBalance()
 			addGames();
 		}
-	
 	}// coupon code
 }
 

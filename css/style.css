@@ -104,7 +104,12 @@
 	}
 	.btn:hover {
 		background-color: #5c7e10;
-	}	
+	}
+
+/* Library Cards */
+	.libraryCards {
+		
+	}
 
 /* Game Personal Pages*/
 	.leftContentDiv {
@@ -179,4 +184,13 @@
 	}
 	#couponCodeText {
 		color: #bdbbb9;
+	}
+	
+	/* Current User Table */
+	.currentUserText {
+		color:#bdbbb9;
+	}
+	
+	.invisible {
+		visibility:hidden;
 	}

@@ -45,11 +45,73 @@
         </div>      
       </div>
 	</div>
-	
-	<br>
-	
+  
+  <br>
+  
+  <!-- Current User Table-->
+  <div class="container">
+    <div class="row checkout">
+        <table class="table table-striped" id="currentUserTable">
+			<tr>
+				<td>First Name: </td>
+				<td id="currentUserFirstName">George</td>
+			</tr>
+			<tr>
+				<td>Surname: </td>
+				<td id="currentUserSurname">George</td>
+			</tr>
+			<tr>
+				<td>Age: </td>
+				<td id="currentUserAge">George</td>
+			</tr>
+			<tr>
+				<td>Email: </td>
+				<td id="currentUserEmail">George</td>
+			</tr>
+			<tr>
+				<td>Phone Number: </td>
+				<td id="currentUserPhoneNumber">George</td>
+			</tr>			
+        </table>
+    </div>
 
-	
+    <br>
+    <button onclick="summonTheFormTable()">Update Account Details</button>
+		
+		<!-- Form Data --->
+		<br><br>
+		<form id="currentUserForm"class="currentUserText invisible">
+		  <div class="form-group">
+			<label>First Name</label>
+			<input type="text" class="form-control" placeholder="Enter First Name" id="firstName">
+		  </div>
+
+		  <div class="form-group">
+			<label>Surname</label>
+			<input type="text" class="form-control" placeholder="Enter Surname" id="surname">
+		  </div>
+		  
+		  <div class="form-group">
+			<label>Age</label>
+			<input type="number" class="form-control" placeholder="Enter Age" id="age">
+		  </div>
+
+		  <div class="form-group">
+			<label>Email address</label>
+			<input type="email" class="form-control" placeholder="Enter Email" id="email">
+		  </div>
+
+		  <div class="form-group">
+			<label>Phone Number</label>
+			<input type="tel" class="form-control" placeholder="Enter Phone Number" id="phoneNumber">
+		  </div>
+		  
+		  <small class="text-muted">We will share all of your information with Third Parties unless otherwise specified.</small>
+		  <br><br>
+		  
+		  <button type="submit" class="btn btn-primary" onclick="updateCurrentUserDetails()">Submit</button>
+		</form>	
+	</div>
 
 	<!--Javascript-->
 	<script src="scripts/account.JS"></script>
