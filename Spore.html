@@ -33,48 +33,61 @@
 	<br><br>
   
     <div class="container">
-            <div class="row navBar">
-	  
-		<a href="index.html" class= "linkTags"><div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="row navBar">	  
+		<div id="store" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
           Store
-        </div></a>
-		
-        <a href="index.html" class= "linkTags"> <div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        </div>
+		<div id="cart" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
           Cart
-        </div></a>
-		
-         <a href="index.html" class= "linkTags"><div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        </div>	
+        <div id="library" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
           Library
-        </div></a>
-		
-         <a href="index.html" class= "linkTags"><div class="navButton col-lg-3 col-md-3 col-sm-3 col-xs-3">
-          About
-        </div> </a>       
+        </div>
+        <div id="about" class="navButton linkTags col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          Account
+        </div>      
       </div>
 	</div>
 	
 	<br>
 	
-	<div class ="container">
-
-		<div class ="row">		
-				<div class = "col-sm-8 GameCarousel">
+	<div class="container">
+		<div class="row">
+			<div class = "col-lg-8 col-md-8 col-sm-8 leftContentDiv">
+				<div class="productPageBox">
+					<h2 class="productPageHeader">Spore</h2>
+					<br>
+					<h4>Trailer: </h4>
+					<iframe align="middle" class="productTrailer"width="700" height="400" src="https://www.youtube.com/embed/zi2GvqboQfY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<br><br><br>
+					<h4>About the Game: </h4>
+					<p>
+							Spore is a 2008 life simulation real-time strategy single-player sandbox god game developed by Maxis and designed by Will Wright, released for Microsoft Windows and Mac OS X. Covering many genres including action, real-time strategy, and role-playing games, Spore allows a player to control the development of a species from its beginnings as a microscopic organism, through development as an intelligent and social creature, to interstellar exploration as a spacefaring culture. It has drawn wide attention for its massive scope, and its use of open-ended gameplay and procedural generation	
+					</p>			
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 						</ol>
 						<div class="carousel-inner">
 						<div class="carousel-item active">
-						  <img class="d-block w-100" src="..." alt="First slide">
+							<img class="d-block w-100" src="images/spore/spore0.jpg" alt="First slide">
 						</div>
 						<div class="carousel-item">
-						  <img class="d-block w-100" src="..." alt="Second slide">
+							<img class="d-block w-100" src="images/spore/spore1.jpg" alt="Second slide">
 						</div>
 						<div class="carousel-item">
-						  <img class="d-block w-100" src="..." alt="Third slide">
+							<img class="d-block w-100" src="images/spore/spore2.jpg" alt="Third slide">
 						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/spore/spore3.jpg" alt="Fourth slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/spore/spore4.jpg" alt="Fifth slide">
+						</div>							
 						</div>
 						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -85,29 +98,48 @@
 						<span class="sr-only">Next</span>
 						</a>
 					</div>
-					
-					<p></p>
-				
 				</div>
-				<div class = "col-sm-1 ">
-					
-				</div>
-				<div class = "col-sm-3 BasketList">
-					<div class = "BoxImage"><img src="images/WOWimages/BoxShot-world-of-warcraft.jpg" alt="WOW Box image"></div>
-					<div class = "ESRBImage"><img src="images/WOWimages/ESRB_Teen.png" alt="ESRB Teen"></div>
-					<p class = "BasketText">Blood, Suggestive Themes, Use of Alcohol, Violence</p>
-					<a onclick="gameToCart(2)" class="btn btn-primary">Add to Cart</a>
-				</div>
-				
-		</div>
-		
-	</div>
+			</div>
 
+			<div class = "col-lg-4 col-md-4 col-sm-4 ">
+					<div class="rightContentDiv" id="infoBox">
+						<div class="productPageBox">
+							<img class="sideboxGameCover" src="images/gameCovers/Spore-285x380.jpg" alt="World Of Warcraft">
+							<br><br>
+							<ul class="list-group">
+									<li class="list-group-item">Title: Spore</li>
+									<li class="list-group-item">Age Rating: 8</li>
+									<li class="list-group-item">Price: $14.99</li>
+							</ul>
+							<br>
+							<div class="productToCartBtn">
+								<a onclick="gameToCart(5)" href="cart.html" class="btn btn-primary">Purchase!</a>
+							</div>
+							</div>								
+					</div>
+			</div>
+		</div>
+	</div>
 	
 	
 	
 	<!--Javascript-->
-	<script src="scripts/WoW.JS"></script>	
+	<script src="scripts/product.JS"></script>
+	<script src="scripts/navigation.JS"></script>
+	<script>
+			window.onscroll = function() {myFunction()};
+			
+			var infoBox = document.getElementById("infoBox");
+			var sticky = infoBox.offsetTop + 400;
+			
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					infoBox.classList.add("sticky")
+				} else {
+					infoBox.classList.remove("sticky");
+				}
+			}
+			</script>
 	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
