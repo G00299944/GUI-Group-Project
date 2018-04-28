@@ -170,7 +170,8 @@ function addGames() {
 }
 
 function updateBalance() {
-	currentUser.accBalance -= totalPrice.toFixed(2);
+	var newBalance = currentUser.accBalance -= totalPrice;
+	currentUser.accBalance = newBalance.toFixed(2);
 	dispCurrentUser();
 	stringLoggedInUser(currentUser);
 }
