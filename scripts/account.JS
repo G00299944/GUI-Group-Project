@@ -47,4 +47,11 @@ function updateCurrentUserDetails() {
 	currentUser.age = document.getElementById("age").value;
 	currentUser.email = document.getElementById("email").value;
 	currentUser.phNum = document.getElementById("phoneNumber").value;
+
+	stringLoggedInUser(currentUser);
+}
+
+// Stringify - Logged in User
+function stringLoggedInUser(obj) {
+	localStorage.loggedInUser = JSON.stringify(obj);
 }
