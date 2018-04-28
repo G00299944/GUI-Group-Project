@@ -194,3 +194,8 @@
 	.invisible {
 		visibility:hidden;
 	}
+
+	marquee {
+		color: #212529;
+		padding: 10px;
+	}
