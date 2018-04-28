@@ -102,49 +102,65 @@
 /* StorePage Card Buttons*/
 	.btn {
 		background-color: #187cbf;
+		text-align: center;
+		
 	}
 	.btn:hover {
 		background-color: #5c7e10;
 	}	
 
-/* Game Personal Pages*/		
-	
-	.carousel {
-		height: 400px;
-	}
-	.sidebox {
-		
+/* Game Personal Pages*/
+	.leftContentDiv {
 		border: 5px solid #212529;
-		border-left:none;
-		background-color: #316282;
-		height: 600px;
-		
+		background-color: #15344b;
+		padding: 10px;
+	}
+
+	.productPageBox {
+		border: 5px solid #212529;
+		background-color: #377096;
+		padding: 10px;
+	}
+
+	.productPageHeader {
+		text-align: center;
+		text-shadow: 1px 1px #bebcba;		
+	}
+
+	.productTrailer {
+		margin: 0 auto;
+	}
+	.productCarousel {
+		border: solid 5px #212529;
+	}
+
+	.rightContentDiv {
+		border: 5px solid #212529;
+		background-color: #15344b;
+		padding: 10px;
 	}
 	.sideboxGameCover {
-		height: 300px;
 		display: block;
-		padding: 10px;
 		margin:auto;
 		margin-left:auto;
 
 	}
-	.GameCarousel{
-		padding: 2em;
-		height: 600px;
-		border: 5px solid #212529;
-		background-color: #316282;
-	}
-	.imageBox{
-		float:center;
-	}
-	.d-block{
-		height:400px;
-		width:500px;
-	}
 	.list-group-item{
-		background-color:#377096;
+		background-color:#187cbf;
 	}
-	
+
+	.productToCartBtn {
+		width: 40%;
+		margin: auto;
+	}
+
+	.sticky {
+		position: fixed;
+		width: 350px;
+		top: 0;
+		padding-top: 10px;
+	}
+
 
 	/*login field styling*/
 	input[type="text"], textarea, input[type="password"] {
