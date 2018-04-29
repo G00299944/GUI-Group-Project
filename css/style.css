@@ -107,8 +107,17 @@
 	}
 
 /* Library Cards */
-	.libraryCards {
+	#LibraryGameContainer {
+		height: 750px;
+		padding: 10px;
 		
+	}
+	.libraryDiv {
+		border: 5px solid #212529;
+		background-color: #377096;
+		float: left;
+		padding: 10px;
+		margin: 10px;
 	}
 
 /* Game Personal Pages*/
@@ -143,6 +152,7 @@
 		width: 365px;
 	}
 	.sideboxGameCover {
+		width:100%;
 		display: block;
 		margin:auto;
 		margin-left:auto;
