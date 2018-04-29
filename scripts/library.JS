@@ -31,41 +31,42 @@ function dispGameLibrary() {
 
 function creatGameDiv(gameId) {
 	var div = document.createElement("div");
-	div.style.width = "100px";
-	div.style.height = "100px";
-	div.style.color = "white";
+	div.style.width = "315px";
+	div.classList.add("libraryDiv");
+	
 	
 	switch(gameId) {
 		case 0: 
-			div.style.background = "red";
-			div.innerHTML = "World of Warcraft";
-			document.getElementById("gameContainer").appendChild(div);
+			div.innerHTML = "<img src=\'images/gameCovers/World of Warcraft-285x380.jpg'></img> <br><hr> <h4 align='center'>World of Warcraft</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.style.float = "left";
+			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 1: 
-			div.style.background = "green";
-			div.innerHTML = "Overwatch";
-			document.getElementById("gameContainer").appendChild(div);
+			div.innerHTML = "<img src=\'images/gameCovers/Overwatch-285x380.jpg'></img> <br><hr> <h4 align='center'>Overwatch</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.style.float = "left";
+			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 2: 
-			div.style.background = "blue";
-			div.innerHTML = "Fornite";
-			document.getElementById("gameContainer").appendChild(div);
+			div.innerHTML = "<img src=\'images/gameCovers/Fortnite-285x380.jpg'></img> <br><hr> <h4 align='center'>Fortnite</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.style.float = "left";
+			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 3: 
-			div.style.background = "yellow";
-			div.innerHTML = "Minecraft";
-			document.getElementById("gameContainer").appendChild(div);
+			div.innerHTML = "<img src=\'images/gameCovers/Minecraft-285x380.jpg'></img> <br><hr> <h4 align='center'>Minecraft</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.style.float = "left";
+			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 4: 
-			div.style.background = "orange";
-			div.innerHTML = "Fallout 4";
-			document.getElementById("gameContainer").appendChild(div);
+			div.innerHTML = "<img src=\'images/gameCovers/Fallout 4-285x380.jpg'></img> <br><hr> <h4 align='center'>Fallout 4</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.style.float = "left";
+			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 5: 
-			div.style.background = "purple";
-			div.innerHTML = "Spore";
-			document.getElementById("gameContainer").appendChild(div);
+			div.innerHTML = "<img src=\'images/gameCovers/Spore-285x380.jpg'></img> <br><hr> <h4 align='center'>Spore</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.style.float = "left";
+			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
+
 
 	}
 
