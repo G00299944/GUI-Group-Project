@@ -42,12 +42,40 @@ function summonTheFormTable(){
 
 //=== The Magical Form that SHOULD change Current User Data ===//
 function updateCurrentUserDetails() {
-	currentUser.fName = document.getElementById("firstName").value;
-	currentUser.lName = document.getElementById("surname").value;
-	currentUser.age = document.getElementById("age").value;
-	currentUser.email = document.getElementById("email").value;
-	currentUser.phNum = document.getElementById("phoneNumber").value;
 
+	var firstName = document.getElementById("firstName").value;
+	var surname = document.getElementById("surname").value;
+	var age = document.getElementById("age").value;
+	var email = document.getElementById("email").value;
+	var phoneNumber = document.getElementById("phoneNumber").value;	
+	
+	if (firstName == "")
+	{
+		firstName = currentUser.fName;
+	}
+	if (surname == "")
+	{
+		surname = currentUser.lName;
+	}	
+	if (age == "")
+	{
+		age = currentUser.age;
+	}
+	if (email == "")
+	{
+		email = currentUser.email;
+	}
+	if (phoneNumber == "")
+	{
+		phoneNumber = currentUser.phNum;
+	}
+	
+	currentUser.fName = firstName;
+	currentUser.lName = surname;
+	currentUser.age = age;
+	currentUser.email = email;
+	currentUser.phNum = phoneNumber;
+	
 	stringLoggedInUser(currentUser);
 }
 
