@@ -3,6 +3,7 @@ window.onload = function() {
 	parseLoggedInUser();
 	dispCurrentUser();
 }		
+window.onscroll = function() {contentScroll()};
 
 // Game Object Template
 function Game(id, title, price, ageReq) {
@@ -27,6 +28,9 @@ var currentUserArrayPos;
 // Cart Array
 var cart = [];
 var carSize = 0;
+//Content Scroll Vars
+var infoBox = document.getElementById("infoBox");
+var sticky = infoBox.offsetTop + 400;
 
 function parseLoggedInUser() {
 	currentUser = JSON.parse(localStorage.loggedInUser);
@@ -34,7 +38,7 @@ function parseLoggedInUser() {
 }
 
 function dispCurrentUser() {
-	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + "!";
+	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + ", Wallet: $" + currentUser.accBalance;
 }
 
 // Add to Cart
@@ -47,4 +51,13 @@ function gameToCart(game) {
 // Stringify - cart
 function stringCart() {
 	localStorage.cart = JSON.stringify(cart);
+}
+
+// Content Scroll Box
+function contentScroll() {
+	if (window.pageYOffset >= sticky) {
+		infoBox.classList.add("sticky")
+	} else {
+		infoBox.classList.remove("sticky");
+	}
 }

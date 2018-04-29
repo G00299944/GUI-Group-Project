@@ -106,46 +106,28 @@
 			</div>
 
 			<div class = "col-lg-4 col-md-4 col-sm-4 ">
-					<div class="rightContentDiv" id="infoBox">
-						<div class="productPageBox">
-							<img class="sideboxGameCover img-fluid" src="images/gameCovers/World of Warcraft-285x380.jpg" alt="World Of Warcraft">
-							<br><br>
-							<ul class="list-group">
-									<li class="list-group-item"><b>Title:</b> World of Warcraft</li>
-									<li class="list-group-item"><b>Age Rating:</b> 13</li>
-									<li class="list-group-item"><b>Price:</b> $44.99</li>
-							</ul>
-							<br>
-							<div class="productToCartBtn">
-								<a onclick="gameToCart(0)" href="cart.html" class="btn btn-primary">Purchase</a>
-							</div>
-							</div>								
-					</div>
+				<div class="rightContentDiv" id="infoBox">
+					<div class="productPageBox">
+						<img class="sideboxGameCover img-fluid" src="images/gameCovers/World of Warcraft-285x380.jpg" alt="World Of Warcraft">
+						<br><br>
+						<ul class="list-group">
+								<li class="list-group-item"><b>Title:</b> World of Warcraft</li>
+								<li class="list-group-item"><b>Age Rating:</b> 13</li>
+								<li class="list-group-item"><b>Price:</b> $44.99</li>
+						</ul>
+						<br>
+						<div class="productToCartBtn">
+							<a onclick="gameToCart(0)" href="cart.html" class="btn btn-primary">Purchase</a>
+						</div>
+					</div>								
+				</div>
 			</div>
-
-
 		</div>
 	</div>
-	
-	
 	
 	<!--Javascript-->
 	<script src="scripts/product.JS"></script>
 	<script src="scripts/navigation.JS"></script>
-	<script>
-			window.onscroll = function() {myFunction()};
-			
-			var infoBox = document.getElementById("infoBox");
-			var sticky = infoBox.offsetTop + 400;
-			
-			function myFunction() {
-				if (window.pageYOffset >= sticky) {
-					infoBox.classList.add("sticky")
-				} else {
-					infoBox.classList.remove("sticky");
-				}
-			}
-			</script>
 	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
