@@ -207,7 +207,8 @@
 	.invisible {
 		visibility:hidden;
 	}
-
+	
+	/* Extra Things */
 	marquee {
 		color: #212529;
 		padding: 10px;

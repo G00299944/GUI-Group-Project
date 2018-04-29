@@ -34,7 +34,6 @@ function creatGameDiv(gameId) {
 	div.style.width = "315px";
 	div.classList.add("libraryDiv");
 	
-	
 	switch(gameId) {
 		case 0: 
 			div.innerHTML = "<img src=\'images/gameCovers/World of Warcraft-285x380.jpg'></img> <br><hr> <h4 align='center'>World of Warcraft</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
@@ -66,8 +65,6 @@ function creatGameDiv(gameId) {
 			div.style.float = "left";
 			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
-
-
 	}
 
 }// creatGameDiv
