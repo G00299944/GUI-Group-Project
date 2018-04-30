@@ -1,3 +1,9 @@
+// on load
+window.onload = function() {
+	parseLoggedInUser();
+	dispCurrentUser();
+}		
+
 // User Object Template
 function User(email, pWord, fName, lName, age, phNum, accBalance, gameLibrary) {
 	this.email = email;
@@ -90,6 +96,16 @@ function gameToCart(game) {
 // Stringify - cart
 function stringCart() {
 	localStorage.cart = JSON.stringify(cart);
+}
+
+// Parsing
+function parseLoggedInUser() {
+	currentUser = JSON.parse(localStorage.loggedInUser);
+	currentUserArrayPos = JSON.parse(localStorage.loggedInUser);
+}
+
+function dispCurrentUser() {
+	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + ", Wallet: $" + currentUser.accBalance;
 }
 
 //=== The Almighty Modal Box ===//

@@ -18,7 +18,10 @@
 	}
 	#libraryBody {
 		height: 1000px;
-	}	
+	}
+	#productBody {
+		height: 2000px;
+	}			
 	p {
 		color: #212529;
 		font-family: 'Gugi', cursive;
@@ -43,6 +46,11 @@
 		padding: 2em;
 		color: #bab8b6;
 	}
+	#logoutButton{
+		float: left;
+		padding: 2em;
+		color: #bab8b6;
+	}	
 
 /* Links */
 	a{
