@@ -128,7 +128,7 @@ function checkout() {
 			modalMessage = "Insufficient Funds!";
 		}
 		else { 
-			modalMessage = "You Bought Games Bruh"; // age = 1, funds = 1, pruchase = 1;
+			modalMessage = "Purchase successful: Games added to library!"; // age = 1, funds = 1, pruchase = 1;
 			updateBalance()
 			addGames();
 		}
@@ -157,7 +157,7 @@ function setCurrentDate() {
 function addGames() {
 	var gameCount = 0;
 
-	for(i = 0; i < currentUser.gameLibrary.lenght; i++) {
+	for(i = 0; i < currentUser.gameLibrary.length; i++) {
 		gameCount++;
 	}
 
