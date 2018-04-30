@@ -36,32 +36,32 @@ function creatGameDiv(gameId) {
 	
 	switch(gameId) {
 		case 0: 
-			div.innerHTML = "<img src=\'images/gameCovers/World of Warcraft-285x380.jpg'></img> <br><hr> <h4 align='center'>World of Warcraft</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.innerHTML = "<img src=\'images/gameCovers/World of Warcraft-285x380.jpg'></img> <br><hr> <h4 align='center'>World of Warcraft</h4> <br> <button id='libraryButtons' class='btn'>Download</button> <button class='btn'>Play</button><hr>";			
 			div.style.float = "left";
 			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 1: 
-			div.innerHTML = "<img src=\'images/gameCovers/Overwatch-285x380.jpg'></img> <br><hr> <h4 align='center'>Overwatch</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.innerHTML = "<img src=\'images/gameCovers/Overwatch-285x380.jpg'></img> <br><hr> <h4 align='center'>Overwatch</h4> <br> <button id='libraryButtons' class='btn'>Download</button> <button class='btn'>Play</button><hr>";			
 			div.style.float = "left";
 			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 2: 
-			div.innerHTML = "<img src=\'images/gameCovers/Fortnite-285x380.jpg'></img> <br><hr> <h4 align='center'>Fortnite</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.innerHTML = "<img src=\'images/gameCovers/Fortnite-285x380.jpg'></img> <br><hr> <h4 align='center'>Fortnite</h4> <br> <button id='libraryButtons' class='btn'>Download</button> <button class='btn'>Play</button><hr>";			
 			div.style.float = "left";
 			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 3: 
-			div.innerHTML = "<img src=\'images/gameCovers/Minecraft-285x380.jpg'></img> <br><hr> <h4 align='center'>Minecraft</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.innerHTML = "<img src=\'images/gameCovers/Minecraft-285x380.jpg'></img> <br><hr> <h4 align='center'>Minecraft</h4> <br> <button id='libraryButtons' class='btn'>Download</button> <button class='btn'>Play</button><hr>";			
 			div.style.float = "left";
 			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 4: 
-			div.innerHTML = "<img src=\'images/gameCovers/Fallout 4-285x380.jpg'></img> <br><hr> <h4 align='center'>Fallout 4</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.innerHTML = "<img src=\'images/gameCovers/Fallout 4-285x380.jpg'></img> <br><hr> <h4 align='center'>Fallout 4</h4> <br> <button id='libraryButtons' class='btn'>Download</button> <button class='btn'>Play</button><hr>";			
 			div.style.float = "left";
 			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;
 		case 5: 
-			div.innerHTML = "<img src=\'images/gameCovers/Spore-285x380.jpg'></img> <br><hr> <h4 align='center'>Spore</h4> <br> <button class='btn'>Download</button> <button class='btn'>Play</button>";			
+			div.innerHTML = "<img src=\'images/gameCovers/Spore-285x380.jpg'></img> <br><hr> <h4 align='center'>Spore</h4> <br> <button id='libraryButtons' class='btn'>Download</button> <button class='btn'>Play</button><hr>";			
 			div.style.float = "left";
 			document.getElementById("LibraryGameContainer").appendChild(div);
 			break;

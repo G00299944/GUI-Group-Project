@@ -42,7 +42,8 @@ var carSize = 0;
 // Other Vars
 var x;
 var i;
-
+var modalMessage;
+var modalCartMessage;
 
 // login 
 function login() {
@@ -56,7 +57,8 @@ function login() {
 			emailBool = true;
 			if(p == users[i].pWord) {
 				pWordBool = true;
-				alert("logged in!");
+				//alert("logged in!");
+				modalMessage = "Logged in!";
 				x = i;
 				stringLoggedInUser(users[x]);
 				document.getElementById("loginFields").innerHTML = "Welcome " + users[x].fName + ", Wallet: $" + users[x].accBalance;
@@ -65,8 +67,9 @@ function login() {
 
 	}// for	
 	
-	if ((emailBool && pWordBool) == false) 
-	alert("Incorrect email or password!");	
+	if ((emailBool && pWordBool) == false)
+	modalMessage = "Incorrect Email or Password";		
+	//alert("Incorrect email or password!");	
 }
 
 // Stringify - Logged in User
@@ -79,11 +82,66 @@ function stringLoggedInUser(obj) {
 function gameToCart(game) {
 	cart[carSize] = games[game];
 	carSize++;
-
-	alert(games[game].title + " added to cart!");
+	
+	modalCartMessage = games[game].title + " added to cart!";
+	//alert(games[game].title + " added to cart!");
 }
 
 // Stringify - cart
 function stringCart() {
 	localStorage.cart = JSON.stringify(cart);
+}
+
+//=== The Almighty Modal Box ===//
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("loginButton");
+var cartBtn0 = document.getElementById("cartButton0");
+var cartBtn1 = document.getElementById("cartButton1");
+var cartBtn2 = document.getElementById("cartButton2");
+var cartBtn3 = document.getElementById("cartButton3");
+var cartBtn4 = document.getElementById("cartButton4");
+var cartBtn5 = document.getElementById("cartButton5");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+	login();
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalMessage;
+}
+cartBtn0.onclick = function() {
+	gameToCart(0);
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalCartMessage;
+}
+cartBtn1.onclick = function() {
+	gameToCart(1);
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalCartMessage;
+}
+cartBtn2.onclick = function() {
+	gameToCart(2);
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalCartMessage;
+}
+cartBtn3.onclick = function() {
+	gameToCart(3);
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalCartMessage;
+}
+cartBtn4.onclick = function() {
+	gameToCart(4);
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalCartMessage;
+}
+cartBtn5.onclick = function() {
+	gameToCart(5);
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalCartMessage;
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

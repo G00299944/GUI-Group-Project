@@ -87,16 +87,16 @@ function checkout() {
 
 			// if's - Error messages for age && funds = pruchase outcomes
 			if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, pruchase = 0;
-				alert("insufficient funds & too young!");
+				modalMessage = "Insufficient Funds & Too Young!";
 			}
 			else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, pruchase = 0;
-				alert("too young!");
+				modalMessage = "Too Young!";
 			}
 			else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, pruchase = 0;
-				alert("insufficient funds!");
+				modalMessage = "Insufficient Funds!";
 			}
 			else { 
-				alert("you bought games yo"); // age = 1, funds = 1, pruchase = 1;
+				modalMessage = "You Bought Games Bruh"; // age = 1, funds = 1, pruchase = 1;
 				updateBalance()
 				addGames();
 			}
@@ -119,16 +119,16 @@ function checkout() {
 
 		// if's - Error messages for age && funds = pruchase outcomes
 		if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, pruchase = 0;
-			alert("insufficient funds & too young!");
+			modalMessage = "Insufficient Funds & Too Young!";
 		}
 		else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, pruchase = 0;
-			alert("too young!");
+			modalMessage = "Too Young!";
 		}
 		else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, pruchase = 0;
-			alert("insufficient funds!");
+			modalMessage = "Insufficient Funds!";
 		}
 		else { 
-			alert("you bought games yo"); // age = 1, funds = 1, pruchase = 1;
+			modalMessage = "You Bought Games Bruh"; // age = 1, funds = 1, pruchase = 1;
 			updateBalance()
 			addGames();
 		}
@@ -180,4 +180,24 @@ function updateBalance() {
 
 function stringLoggedInUser(obj) {
 	localStorage.loggedInUser = JSON.stringify(currentUser);
+}
+
+//=== The Almighty Modal Box ===//
+var modalMessage = "DEFAULT_MESSAGE";
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("purchaseButton");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+	checkout();
+    modal.style.display = "block";
+	document.getElementById("modalMessagePara").innerHTML = modalMessage;
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

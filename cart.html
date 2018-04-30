@@ -15,9 +15,17 @@
     <title>aXon | Cart</title>
 
   </head>
-  <body>
+  <body id="cartBody">
 	<div id="loginFields">
 	</div>
+	
+	<!-- Alert Thingy-->
+	<div id="myModal" class="modal">
+	  <div class="modal-content">
+		<span class="close">&times;</span>
+		<p id="modalMessagePara"></p>
+	  </div>
+	</div> 
 	
 	<br>
 	
@@ -64,10 +72,9 @@
     <input id="couponCode" type=text>
 	</div>
     <br>
-    <button onclick="checkout()">Confirm Purchase!</button> 
-  </div>
+    <button id="purchaseButton">Confirm Purchase!</button> 
+ </div>
  
-
 	<!--Javascript-->
 	<script src="scripts/cart.JS"></script>
 	<script src="scripts/navigation.JS"></script>
