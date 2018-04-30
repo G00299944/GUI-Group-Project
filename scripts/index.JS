@@ -4,6 +4,7 @@ window.onload = function() {
 	dispCurrentUser();
 }		
 
+
 // User Object Template
 function User(email, pWord, fName, lName, age, phNum, accBalance, gameLibrary) {
 	this.email = email;
@@ -16,6 +17,7 @@ function User(email, pWord, fName, lName, age, phNum, accBalance, gameLibrary) {
 	this.gameLibrary = gameLibrary;
 }
 
+
 // Game Object Template
 function Game(id, title, price, ageReq) {
 	this.id = id;
@@ -27,10 +29,11 @@ function Game(id, title, price, ageReq) {
 
 // User Object Instantiation
 var users = [];
-users[0] = new User("dnbutler@gmail.com", "testPassword27", "Darren", "Butler", 23, 353892382755, 100.00, [0, 1, 2, 3, 4, 5]); // Darren
-users[1] = new User("HamSoro@hotmail.com", "1234", "Connor", "Brookfield", 10, 353871234567, 0.01, []); // Connor
-users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 21, 02356, 40.32, []); // Evan
-users[3] = new User("gagnew@gmit.ie", "java", "Gagnew", "Junior", 56, 02356, 64.32, []); // Gagnew
+users[0] = new User("dnbutler@gmail.com", "testPassword27", "Darren", "Butler", 23, 353892382755, 100.00, [0,1,4]); // Darren
+users[1] = new User("hamsoro@hotmail.com", "1234", "Connor", "Brookfield", 18, 353871234567, 0.00, [2]); // Connor
+users[2] = new User("resh@compuserve.com", "5678", "Evan", "Greaney", 13, 353860987654, 54.32, [1,3]); // Evan
+users[3] = new User("gagnew@gmit.ie", "java", "Gerry", "Agnew", 56, 123456789012, 10000.00, [0,1,2,3,4,5]); // Gagnew
+
 
 // Game Object Instantiation
 var games = [];
@@ -41,15 +44,18 @@ games[3] = new Game(3, "Minecraft", 23.95, 5);
 games[4] = new Game(4, "Fallout 4", 29.99, 18);
 games[5] = new Game(5, "Spore", 14.99, 8);
 
+
 // Cart Array
 var cart = [];
 var carSize = 0;
+
 
 // Other Vars
 var x;
 var i;
 var modalMessage;
 var modalCartMessage;
+
 
 // login 
 function login() {
@@ -78,11 +84,13 @@ function login() {
 	//alert("Incorrect email or password!");	
 }
 
+
 // Stringify - Logged in User
 function stringLoggedInUser(obj) {
 	localStorage.loggedInUser = JSON.stringify(users[x]);
 	localStorage.loggedInUserArrayPos = JSON.stringify(x);
 }
+
 
 // Add to Cart
 function gameToCart(game) {
@@ -93,10 +101,12 @@ function gameToCart(game) {
 	//alert(games[game].title + " added to cart!");
 }
 
+
 // Stringify - cart
 function stringCart() {
 	localStorage.cart = JSON.stringify(cart);
 }
+
 
 // Parsing
 function parseLoggedInUser() {
@@ -107,6 +117,7 @@ function parseLoggedInUser() {
 function dispCurrentUser() {
 	document.getElementById("loginFields").innerHTML = "Welcome " + currentUser.fName + ", Wallet: $" + currentUser.accBalance;
 }
+
 
 //=== The Almighty Modal Box ===//
 var modal = document.getElementById('myModal');

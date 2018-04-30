@@ -5,6 +5,7 @@ window.onload = function() {
 	dispCurrentUser();
 	basketTotal();
 	generateCheckoutTable();
+	setCurrentDate();
 }		
 
 // vars
@@ -13,11 +14,12 @@ var currentUserArrayPos;
 var cart = [];
 var i;
 var totalPrice = 0;
-var couponCode = "GUIPROJECT";
 
+// valid date coupon
+var couponCode = "GUIPROJECT";
 var couponY = 2018;
 var couponM = 8; 
-var couponD = 16;
+
 var year, month, date;
 
 // this line is not our code, all other code dealing with date validation is our own
@@ -67,12 +69,12 @@ function checkout() {
 	setCurrentDate();
 
 	if(inputCode == couponCode) {
-		if(year <= couponY && month <= couponM) {
+		if((year <= couponY && month <= couponM) ) { // coupon code date validation
 			
 			totalPrice = totalPrice - (totalPrice*0.1); // subtract coupon 10% from total price
 
 			// if's - check for sufficient funds and age requirement
-			if(currentUser.accBalance > totalPrice) {
+			if(currentUser.accBalance >= totalPrice) {
 				sufficientFunds = true;
 			}// sufficient funds
 			for(i = 0; i < cart.length; i++) { // cycle through cart array to find out the highest age requirement
@@ -85,26 +87,30 @@ function checkout() {
 			}// age requirement
 			//======================================================
 
-			// if's - Error messages for age && funds = pruchase outcomes
-			if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, pruchase = 0;
-				modalMessage = "Insufficient Funds & Too Young!";
+			// if's - Error messages for age && funds = purchase outcomes
+			if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, purchase = 0;
+				modalMessage = "-Insufficient Funds	-Age Requirement Not Met";
 			}
-			else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, pruchase = 0;
-				modalMessage = "Too Young!";
+			else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, purchase = 0;
+				modalMessage = "-Age Requirement Not Met";
 			}
-			else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, pruchase = 0;
-				modalMessage = "Insufficient Funds!";
+			else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, purchase = 0;
+				modalMessage = "-Insufficient Funds";
 			}
 			else { 
-				modalMessage = "You Bought Games Bruh"; // age = 1, funds = 1, pruchase = 1;
+				modalMessage = "-Purchase Successful: Games Added to library"; // age = 1, funds = 1, purchase = 1;
 				updateBalance()
 				addGames();
 			}
 		}// coupon date check
+		else {
+			modalMessage = "-Coupon Out of Date";
+		}
+
 	}
 	else { // if no coupon code was entered, or invalid coupon code
 		// if's - check for sufficient funds and age requirement
-		if(currentUser.accBalance > totalPrice) {
+		if(currentUser.accBalance >= totalPrice) {
 			sufficientFunds = true;
 		}// sufficient funds
 		for(i = 0; i < cart.length; i++) { // cycle through cart array to find out the highest age requirement
@@ -117,18 +123,18 @@ function checkout() {
 		}// age requirement
 		//======================================================
 
-		// if's - Error messages for age && funds = pruchase outcomes
-		if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, pruchase = 0;
-			modalMessage = "Insufficient Funds & Too Young!";
+		// if's - Error messages for age && funds = purchase outcomes
+		if(ageReqsMet == false && sufficientFunds == false) { // age = 0, funds = 0, purchase = 0;
+			modalMessage = "-Insufficient Funds	-Age Requirement Not Met";
 		}
-		else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, pruchase = 0;
-			modalMessage = "Too Young!";
+		else if(ageReqsMet == false && sufficientFunds == true) { // age = 0, funds = 1, purchase = 0;
+			modalMessage = "-Age Requirement Not Met";
 		}
-		else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, pruchase = 0;
-			modalMessage = "Insufficient Funds!";
+		else if(ageReqsMet == true && sufficientFunds == false) { // age = 1, funds = 0, purchase = 0;
+			modalMessage = "-Insufficient Funds";
 		}
 		else { 
-			modalMessage = "Purchase successful: Games added to library!"; // age = 1, funds = 1, pruchase = 1;
+			modalMessage = "-Purchase Successful: Games Added to library"; // age = 1, funds = 1, purchase = 1;
 			updateBalance()
 			addGames();
 		}
